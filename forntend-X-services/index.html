@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter Service UI</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body> 
+
+<body>
     <div class="container">
-        <h1>Twitter Service</h1>
+        <h1>Mastodon Post Manager</h1>
 
-        <!-- Section for creating a tweet -->
-        <div class="tweet-box">
-            <h2>Create a Tweet</h2>
-            <form id="createTweetForm">
-                <textarea id="tweetText" placeholder="Write your tweet here..." rows="4" required></textarea>
-                <button type="submit" class="btn-create">Create Tweet</button>
+        <!-- Section for creating a post -->
+        <div class="post-box">
+            <h2>Create a Post</h2>
+            <form id="createPostForm">
+                <textarea id="postText" placeholder="Write your post here..." rows="4" required></textarea>
+                <button type="submit" class="btn-create">Create Post</button>
             </form>
         </div>
 
-        <!-- Section for retrieving a tweet -->
-        <div class="tweet-box">
-            <h2>Retrieve a Tweet</h2>
-            <form id="retrieveTweetForm">
-                <input type="text" id="tweetIdRetrieve" placeholder="Enter Tweet ID" required>
-                <button type="submit" class="btn-retrieve">Retrieve Tweet</button>
+        <!-- Section for retrieving a post -->
+        <div class="post-box">
+            <h2>Retrieve a Post</h2>
+            <form id="retrievePostForm">
+                <input type="text" id="postIdRetrieve" placeholder="Enter Post ID" required>
+                <button type="submit" class="btn-retrieve">Retrieve Post</button>
             </form>
-            <div id="tweetDetails" class="tweet-details"></div>
+            <div id="postDetails" class="post-details"></div>
         </div>
 
-        <!-- Section for deleting a tweet -->
-        <div class="tweet-box">
-            <h2>Delete a Tweet</h2>
-            <form id="deleteTweetForm">
-                <input type="text" id="tweetIdDelete" placeholder="Enter Tweet ID" required>
-                <button type="submit" class="btn-delete">Delete Tweet</button>
+        <!-- Section for deleting a post -->
+        <div class="post-box">
+            <h2>Delete a Post</h2>
+            <form id="deletePostForm">
+                <input type="text" id="postIdDelete" placeholder="Enter Post ID" required>
+                <button type="submit" class="btn-delete">Delete Post</button>
             </form>
         </div>
     </div>
 
     <script src="app.js"></script>
 </body>
+
 </html>

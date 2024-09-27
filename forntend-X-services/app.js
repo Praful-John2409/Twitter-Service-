@@ -1,23 +1,26 @@
-// Dummy JS code as placeholder for Twitter API interactions
-document.getElementById('createTweetForm').addEventListener('submit', function(e) {
+document.getElementById('createPostForm').addEventListener('submit', function (e)
+{
     e.preventDefault();
-    const tweetText = document.getElementById('tweetText').value;
-    console.log('Creating tweet:', tweetText);
-    // TODO: Add Twitter API call to create tweet
+    const postText = document.getElementById('postText').value;
+    console.log('Creating post:', postText);
+
 });
 
-document.getElementById('retrieveTweetForm').addEventListener('submit', function(e) {
+document.getElementById('retrievePostForm').addEventListener('submit', function (e)
+{
     e.preventDefault();
-    const tweetId = document.getElementById('tweetIdRetrieve').value;
-    console.log('Retrieving tweet with ID:', tweetId);
-    // TODO: Add Twitter API call to retrieve tweet and display it
-    document.getElementById('tweetDetails').style.display = 'block';
-    document.getElementById('tweetDetails').innerText = `Tweet with ID ${tweetId} details here...`;
+    const postId = document.getElementById('postIdRetrieve').value;
+    console.log('Retrieving post with ID:', postId);
+
+    document.getElementById('postDetails').style.display = 'block';
+    document.getElementById('postDetails').innerText = `post with ID ${postId} details here...`;
 });
 
-document.getElementById('deleteTweetForm').addEventListener('submit', function(e) {
+document.getElementById('deletePostForm').addEventListener('submit', function (e)
+{
     e.preventDefault();
-    const tweetId = document.getElementById('tweetIdDelete').value;
-    console.log('Deleting tweet with ID:', tweetId);
-    // TODO: Add Twitter API call to delete tweet
+    const postId = document.getElementById('postIdDelete').value;
+    console.log('Deleting post with ID:', postId);
+
 });
+
