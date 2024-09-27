@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Service UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <div class="container">
+        <h1>Twitter Service</h1>
+
+        <!-- Section for creating a tweet -->
+        <div class="tweet-box">
+            <h2>Create a Tweet</h2>
+            <form id="createTweetForm">
+                <textarea id="tweetText" placeholder="Write your tweet here..." rows="4" required></textarea>
+                <button type="submit" class="btn-create">Create Tweet</button>
+            </form>
+        </div>
+
+        <!-- Section for retrieving a tweet -->
+        <div class="tweet-box">
+            <h2>Retrieve a Tweet</h2>
+            <form id="retrieveTweetForm">
+                <input type="text" id="tweetIdRetrieve" placeholder="Enter Tweet ID" required>
+                <button type="submit" class="btn-retrieve">Retrieve Tweet</button>
+            </form>
+            <div id="tweetDetails" class="tweet-details"></div>
+        </div>
+
+        <!-- Section for deleting a tweet -->
+        <div class="tweet-box">
+            <h2>Delete a Tweet</h2>
+            <form id="deleteTweetForm">
+                <input type="text" id="tweetIdDelete" placeholder="Enter Tweet ID" required>
+                <button type="submit" class="btn-delete">Delete Tweet</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

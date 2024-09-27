@@ -1,0 +1,99 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1DA1F2;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tweet-box {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+textarea:focus, input[type="text"]:focus {
+    outline: none;
+    border-color: #1DA1F2;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-create {
+    background-color: #1DA1F2;
+}
+
+.btn-create:hover {
+    background-color: #0c83d4;
+}
+
+.btn-retrieve {
+    background-color: #17a589;
+}
+
+.btn-retrieve:hover {
+    background-color: #148475;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+.tweet-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    display: none;
+}
