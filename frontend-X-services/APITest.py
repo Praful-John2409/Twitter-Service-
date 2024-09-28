@@ -1,5 +1,5 @@
 #API Test Code by Ranyi Zhang
-#Set Up Instrunctions:
+#Set Up Instrunctions (If you want to test it in a virtual environment, optional but not mandatory):
 #1.Before running the Unit Test, you need to set up your virtual environment with:
 ##python3 -m venv myenv
 #2.Then run: myenv\Scripts\Activate.ps1
