@@ -1,5 +1,12 @@
-export function retrievePost(e)
+import { getAccessToken } from "./app.js";
+
+export async function retrievePost(e)
 {
+  e.preventDefault();
+  const response = await fetch('config.json');
+  const config = await response.json();
+  const accessToken = config.accessToken;
+  console.log("accessToken (retrieve): ", accessToken);
   const postId = document.getElementById('postIdRetrieve').value;
   console.log('Retrieving post with ID:', postId);
 
@@ -7,7 +14,7 @@ export function retrievePost(e)
   document.getElementById('postDetails').style.display = 'block';
   document.getElementById('postDetails').innerText = `Loading post with ID ${postId}...`;
 
-  const accessToken = 'nI7-TGXVq2HDOjQFsQv1UMeiNR2fDraZ_aAQMXJiXzg';
+  // const accessToken = 'nI7-TGXVq2HDOjQFsQv1UMeiNR2fDraZ_aAQMXJiXzg';
   const mastodonInstance = 'https://mastodon.social';
 
   return fetch(`${mastodonInstance}/api/v1/statuses/${postId}`, {
